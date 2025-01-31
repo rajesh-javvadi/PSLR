@@ -4,15 +4,29 @@
   font-family: "Sansita Swashed", serif;
   color: #b3a4fe;
   height: 12vh;
+  
   /* background-color: #C5BAFF; */
   /* border-bottom: 2px solid skyblue; */
-  margin: 0 15px;
+  /* margin: 0 15px; */
   /* text-shadow: 2px 2px black; */
+  /* box-shadow: 6px 6px 12px #c5c5c5,
+  -6px -6px 12px #ffffff;
+  border-left: 1px solid gray; */
 }
 
 form {
-  border: 1px solid lightgreen;
+  /* border: 1px solid lightgreen; */
   border-radius: 5px;
+  border: 1px solid rgb(134, 255, 198);
+  /* box-shadow: rgba(133, 189, 215, 0.8784313725) 0px 30px 30px -20px; */
+  margin: 20px;
+  box-shadow: 6px 6px 12px #c5c5c5,
+  -6px -6px 12px #ffffff;
+}
+
+#post-a-card {
+  box-shadow: 6px 6px 12px #c5c5c5,
+  -6px -6px 12px #ffffff;
 }
 
 /* * {
@@ -43,47 +57,58 @@ body {
   width: 38%;
   /* height: 90%; */
   position: absolute;
-  left: 32%;
-  top:10%;
+  left: 42%;
+  top:8%;
   background-color: white;
+  
 }
 
-.App {
-  text-align: center;
+#body-container {
+  height: 84vh;
+  width: 100vw;
+  /* box-sizing: border-box; */
+}
+#aboutUs {
+  /* border: 1px solid gray; */
+  border-radius: 5px;
+  /* margin: 10px; */
+  margin-bottom: 10px;
+  box-shadow: 6px 6px 12px #c5c5c5,
+             -6px -6px 12px #ffffff;
+}
+#addNew {
+  height: 6vh;
+  /* border: 1px solid gray; */
+  margin: 8px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+#cards-container {
+  /* border: 1px solid gray; */
+  height: 74vh;
+  margin: 8px;
+  border-radius: 5px;
+  margin-top: 5px;
+  box-shadow: 6px 6px 12px #c5c5c5,
+  -6px -6px 12px #ffffff;
+  overflow-x: auto;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+#about-us-content {
+  text-align: justify;
+  text-justify: inter-word;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
+.card {
+  margin: 20px;
+  height: 93%;
+  background: white;
+  border-radius: 10px;
+  transition: border-radius 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  padding: 0;
+ }
+ 
+ .shadow {
+  box-shadow: inset 0 -3em 3em rgba(0,0,0,0.1),
+              0 0  0 2px rgb(190, 190, 190),
+              0.3em 0.3em 1em rgba(0,0,0,0.3);
+ }
