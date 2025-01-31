@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
+#logo {
+  font-family: "Sansita Swashed", serif;
+  color: #b3a4fe;
+  height: 12vh;
+  /* background-color: #C5BAFF; */
+  /* border-bottom: 2px solid skyblue; */
+  margin: 0 15px;
+  /* text-shadow: 2px 2px black; */
+}
+
+form {
+  border: 1px solid lightgreen;
+  border-radius: 5px;
+}
+
+/* * {
+  color: white;
+  background-color: #00082d;
+} */
+
+#AboutUs {
+  border-right: 2px solid black;
+  border-radius: 2px;
+  text-align: justify;
+  text-justify: inter-word;
+  max-width: 18%;
+  max-height: 100%;
+  padding: 0;
+  color: white;
+}
+.card {
+  width: 16rem;
+}
+body {
+  box-sizing: border-box;
+  position: relative;
+  /* overflow: hidden; */
+}
+.form-popup {
+  /* padding-left: 10px; */
+  width: 38%;
+  /* height: 90%; */
+  position: absolute;
+  left: 32%;
+  top:10%;
+  background-color: white;
+}
