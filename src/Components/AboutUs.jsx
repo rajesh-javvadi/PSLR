@@ -4,7 +4,7 @@ export default class AboutUs extends Component {
     render() {
         return (
             <>
-                <div class="h3 text-center" >About US</div>
+                <div className="h3 text-center" >About US</div>
                 <div id='about-us-content'>
                     PSLR is all about posting your technical problems encountered while learning, and what is the solution for
                     the problem and note on your learning with references. So you can refer it later. In PSLR you post your

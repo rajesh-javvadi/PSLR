@@ -1,5 +1,3 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Sansita+Swashed:wght@300..900&display=swap');
 #logo {
   font-family: "Sansita Swashed", serif;
   color: #b3a4fe;
@@ -12,6 +10,59 @@
   /* box-shadow: 6px 6px 12px #c5c5c5,
   -6px -6px 12px #ffffff;
   border-left: 1px solid gray; */
+}
+
+
+/* Header.css */
+.header-container {
+  background: linear-gradient(135deg, #2c3e50, #3498db);
+  padding: 1.5rem 2rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.header-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.header-content.hovered {
+  transform: scale(1.02);
+}
+
+.logo-text {
+  color: #fff;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 2.5rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+  margin: 0;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+.logo-subtext {
+  color: #ecf0f1;
+  font-size: 1.2rem;
+  margin: 0.5rem 0;
+  font-style: italic;
+  transition: all 0.3s ease;
+}
+
+.logo-divider {
+  width: 60px;
+  height: 3px;
+  background: #e74c3c;
+  margin: 1rem auto;
+  border-radius: 2px;
+}
+
+.logo-motto {
+  color: #bdc3c7;
+  font-size: 0.9rem;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin: 0;
 }
 
 form {
@@ -112,3 +163,19 @@ body {
               0 0  0 2px rgb(190, 190, 190),
               0.3em 0.3em 1em rgba(0,0,0,0.3);
  }
+
+.card {
+  height: 450px; 
+  overflow-y: auto; 
+  display: flex;
+  flex-direction: column;
+}
+
+.card-body {
+  flex: 1; 
+  overflow-y: auto; 
+}
+
+.card-footer {
+  flex-shrink: 0; 
+}
