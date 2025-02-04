@@ -2,12 +2,15 @@ import React, { Component } from 'react';
 import AboutUs from './AboutUs';
 import Form from './Form';
 import Card from './Card';
+import cardsData from '../Services/CardsData';
+import DarkMode from './DarkModeComponent';
+
 
 export default class CardsContainer extends Component {
     constructor(props) {
         super(props);
         this.state = {
-            cards: JSON.parse(localStorage.getItem('cards')) || [],
+            cards: cardsData.getCardsData() || [],
             editingCardIndex: null,
         };
         this.addCard = this.addCard.bind(this);
@@ -52,14 +55,12 @@ export default class CardsContainer extends Component {
         return (
             <>
                 <div className="row p-2 m-2" id="body-container">
-                    <div className="col-3 p-5 pt-4 pb-3 mb-3 lh-lg" id="aboutUs">
-                        <AboutUs />
-                    </div>
+                    
                     <div className="col-9">
                         <div className="row" id="addNew">
                             <button
                                 type="button"
-                                className="btn btn-success col-2"
+                                className="btn btn-success col-md-2 col-4"
                                 id="post-a-card"
                                 onClick={function () {
                                     this.props.onHandleShowForm(true);
@@ -67,6 +68,8 @@ export default class CardsContainer extends Component {
                             >
                                 Post a Card
                             </button>
+                             <div className='col-8'></div>
+                            {/* <DarkMode/> */}
                         </div>
                         <div className="row" id="cards-container">
                             {this.state.cards.map(function (card, index) {

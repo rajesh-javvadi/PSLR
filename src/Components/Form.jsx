@@ -50,7 +50,7 @@ export class Form extends Component {
 
   render() {
     return (
-      <form className="p-3 m-3 form-popup" onSubmit={this.onSubmitHandler}>
+      <form className="p-3 m-3 form-popup w-75" onSubmit={this.onSubmitHandler}>
         <div className="mb-3">
           <label htmlFor="question" className="form-label">Question❔</label>
           <input
